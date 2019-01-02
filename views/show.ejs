@@ -1,0 +1,14 @@
+<% include partials/header %>
+
+<div class = "container">
+    <div class = "caption">
+        <h1> <strong><%= collection.country %></strong> - <%= collection.name %> - <em> <%= collection.year %></em> </h1>    
+    </div>
+    <image src = "<%= collection.image %>">
+    
+    <div>
+        <p><%= collection.description %></p>
+    </div>
+</div>
+
+<% include partials/footer %>
