@@ -88,7 +88,7 @@ app.get("/collections/new", function(req, res){
 })
 
 // show one item detail
-app.get("collections/:id", function(req, res){
+app.get("/collections/:id", function(req, res){
     
    Stampcollection.findById(req.params.id, function(err, foundcollection){
       if(err){
